@@ -58,4 +58,40 @@
 .f-p85rem {
   font-size: .85rem;
 }
+
+.author-cat a {
+  margin-right: 5px;
+}
+
+.max-w-80p {
+  max-width: 80%;
+}
+
+.author-tag {
+  max-width: 300px;
+}
+
+@media (max-width: 576px) {
+  .author-tag {
+    max-width: 150px;
+  }
+}
+
+.author-table td, .author-table th {
+  min-width: 125px;
+}
+
+.author-table th {
+  font-weight: 500;
+  color: #6f42c1;
+}
+
+.author-table tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.news-cell {
+  min-width: 250px !important;
+  font-weight: 500;
+}
 /*# sourceMappingURL=author.css.map */
