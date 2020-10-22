@@ -75,6 +75,10 @@
   .author-tag {
     max-width: 150px;
   }
+  .author-pic {
+    width: 100px;
+    padding-top: 100px;
+  }
 }
 
 .author-table td, .author-table th {
@@ -88,10 +92,5 @@
 
 .author-table tr:nth-child(even) {
   background-color: #e9ecef;
-}
-
-.news-cell {
-  min-width: 250px !important;
-  font-weight: 500;
 }
 /*# sourceMappingURL=author.css.map */

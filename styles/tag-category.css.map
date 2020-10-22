@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,IAAI,CAAA;EACA,UAAU,EAAE,OAAO;EACnB,KAAK,EAAE,KAAK;EACZ,YAAY,EAAE,MAAM;EACpB,aAAa,EAAE,MAAM;EACrB,OAAO,EAAE,aAAa;EACtB,aAAa,EAAE,IAAI;EACnB,SAAS,EAAE,MAAM;EACjB,eAAe,EAAE,IAAI;EACrB,OAAO,EAAE,YAAY;CAMxB;;AAfD,AAWI,IAXA,AAWC,MAAM,CAAA;EACH,eAAe,EAAE,SAAS;EAC1B,KAAK,EAAE,IAAI;CACd",
+    "sources": [
+        "tag-category.scss"
+    ],
+    "names": [],
+    "file": "tag-category.css"
+}
