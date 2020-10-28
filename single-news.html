@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single Page - Bangla Medium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"></i>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+
+<body>
+    <section class="top-bar bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-9 d-flex">
+                    <p class="m-0" id="top-bar-bn-date"> -- </p>
+                    <ul class="top-menu mobile-hidden">
+                        <li><a href="#">বিজ্ঞাপন দিন</a></li>
+                        <li><a href="#">যোগাযোগ করুন</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 d-flex justify-content-end">
+                    <ul class="top-menu top-menu-social">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main-menu-section" id="main-menu-parent">
+        <div class="container">
+            <nav class="nav-main" id="nav-main">
+                <div class="brand">
+                    <a href="#"><img src="image/placeholder-logo-2.png" alt=""></a>
+                </div>
+                <div class="main-menu" id="main-menu">
+                    <button class="mobile-menu-close" id="mobile-menu-close">
+                        <i class="far fa-times-circle"></i>
+                    </button>
+                    <ul>
+                        <li><a href="#">প্রচ্ছদ</a></li>
+                        <li><a href="#">নাটক</a></li>
+                        <li><a href="#">সিনেমা</a></li>
+                        <li><a href="#">সঙ্গীত</a></li>
+                        <li><a href="#">হলিউড</a></li>
+                        <li><a href="#">বলিউড</a></li>
+                        <li><a href="#">ভিডিও </a></li>
+                        <li><a href="#">ফটো গ্যালারী </a></li>
+                        <li class="has-submenu">
+                            <a href="#">আরো</a>
+                            <ul class="submenu" data-mobile="false">
+                                <li><a href="#">সিনেমা</a></li>
+                                <li><a href="#">সঙ্গীত</a></li>
+                                <li><a href="#">হলিউড</a></li>
+                                <li><a href="#">বলিউড</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="main-menu-search">
+                    <button id="mobile-menu-hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <button id="menu-search-btn"><i class="fas fa-search"></i></button>
+                    <div class="search-overlay" id="search-overlay" data-state="false">
+                        <form action="">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="সার্চ করুন" aria-label="সার্চ করুন"
+                                    aria-describedby="button-addon2">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="submit" id="button-addon2">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="page-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="row" style="flex-wrap:nowrap">
+                        <div class="col-1">
+                            <div class="share-options">
+                                <ul>
+                                    <li>শেয়ারঃ</li>
+                                    <li><a href="#" class="bg-facebook"><i class="fab fa-facebook-f"> </i></a></li>
+                                    <li><a href="#" class="bg-twitter"><i class="fab fa-twitter"> </i></a></li>
+                                    <li><a href="#" class="bg-google"><i class="fab fa-google-plus-g"> </i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-11">
+                            <div class="single-news">
+                                <h1>সংগীত জগতের মাফিয়ারা ঈশ্বর সাজে: মুখ খুললেন আদনান সামি</h1>
+                                <ul class="news-meta">
+                                    <li class="mobile-hidden"><a href="#">
+                                        <span><i class="far fa-user"></i></span>
+                                        <span>স্টাফ রিপোর্টার</span>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                        <span>২০ জুন, ২০২০</span>
+                                    </a></li>
+                                    <li>
+                                        <span><i class="far fa-clock"></i></span>
+                                        <span>৫ মিনিটের পাঠ্য</span>
+                                    </li>
+                                </ul>
+                                <div class="featured-image">
+
+                                    <img src="image/single-image-1.jpg" alt="">
+                                </div>
+                                <div class="news-body">
+                                    <div class="generic-content">
+                                        <p> বলিউডে প্রতিভাকে কীভাবে অবদমন করা হয় তা নিয়ে এবার মুখ খুলেছেন সংগীতশিল্পী আদনান
+                                            সামি।</p>
+                                        <div class="external-content">
+                                            <img src="image/external-link-2.gif" alt="">
+                                        </div>
+                                        <p>
+
+                                            একটা মৃত্যুই নাড়িয়ে দিয়েছে গোটা বিনোদন ইন্ডাস্ট্রিকে। সুশান্ত সিং রাজপুতের
+                                            আত্মহত্যার পরই বলিউডে নেপোটিজম কিংবা স্বজনপোষনের বিষয়টি আরও জোরালো হয়েছে। শুধু
+                                            চলচ্চিত্র অঙ্গনেই যে এই নিকৃষ্ট মানসিকতার শিকার হতে হয়, এমন নয়! সিনেমার মতো সংগীত
+                                            শিল্পেও যে মাফিয়াদের রাজত্ব চলে, দিন কয়েক আগেই বিস্ফোরক এই তথ্য প্রকাশ্যে এনেছিলেন
+                                            সোনু নিগম।
+                                        </p>
+
+                                        <p>
+                                            সোনু নিগমের সমর্থনে সুর মিলিয়েছেন একের পর এক তারকা। স্বজনপ্রীতি নিয়ে মুখ খুলতে দেখা গেছে
+                                            অনেককেই। মিউজিক ইন্ডাস্ট্রিতে মাফিয়া প্রভাবের বিষয়টি সমর্থন করেছেন গায়িকা মোনালি ঠাকুরও।
+                                            কীভাবে নবাগতদের দমিয়ে রাখা হয়, সেকথাও বলেন মোনালি। এবার সেই একই বিষয় নিয়ে মুখ খুললেন
+                                            গায়ক আদনান সামি।
+                                        </p>
+                                        <p>
+                                            বলিউডে নেপোটিজম বা স্বজনপোষণ নিয়ে চলছে তোলপাড়। এরই মধ্যে এবার আদনান বললেন, ‘বলিউডে কিছু
+                                            ব্যক্তি স্বঘোষিত ঈশ্বর। এখানে মিউজিক মাফিয়ারাই ইন্ডাস্ট্রি চালাচ্ছেন আর ঈশ্বর সাজার
+                                            চেষ্টা করছেন! আপনারা যারা মিউজিক ও সিনে ইন্ডাস্ট্রির মাফিয়া, নিজেরাই নিজেদের ঈশ্বরের
+                                            আসনে বসিয়েছেন, ইতিহাস থেকে আপনারা শেখেননি যে, শিল্প কিংবা সৃষ্টিশীলতাকে কখনও দমন করা যায়
+                                            না!’
+
+                                        </p>
+
+                                        <p>
+                                            আদনান বলেন, এখানে তো মিউজিক মাফিয়ারা শিল্পকে নিয়ন্ত্রণ করার চেষ্টা করে। আর এই কাজটা
+                                            তারাই করেন, যারা সংগীতের সৃজনশীলতা নিয়ে একেবারেই অজ্ঞ! ভারতীয় সিনেমা ও মিউজিক
+                                            ইন্ডাস্ট্রির সত্যিই একটা প্রবল ঝাঁকুনির দরকার। বিশেষ করে গানের জগতের ক্ষেত্রে, নতুন
+                                            এমনকি প্রবীণ গায়ক-গায়িকা, কম্পোজারদেরও জঘণ্যভাবে শোষিত হতে হয়। হয় তুমি হর্তাকর্তাদের
+                                            অঙ্গুলিহেলনে চলো, নাহলে তুমি বাদ। কেন দিনের পর দিন সৃজনশীলতাকে নিয়ন্ত্রণ করে কিছু অজ্ঞ
+                                            লোকজন। </p>
+                                        <p>
+                                        <blockquote>
+                                            তারা কি নিজেদের ঈশ্বর বলে প্রমাণ করার চেষ্টা করেন?”, প্রশ্ন তুলেছেন আদনান সামি।
+                                        </blockquote>
+                                        </p>
+
+
+                                        </p>
+
+                                        <p>
+                                            এর পাশাপাশি পুরনো গানের রিমেক ও রিমিক্স করার নতুন যে প্রবণতা চলছে বলিউডে, এই ট্রেন্ডকেও
+                                            প্রশ্নবিদ্ধ করেন আদনান। তার কথায়, ভারতে ১৩০ কোটি মানুষের বাস। আর আমাদের রিমেক আর রিমিক্স
+                                            ছাড়া কি কিছুই দেওয়ার নেই শ্রোতাদের? ঈশ্বরের দোহাই, এ সব বন্ধ করুন! যারা সত্যিকারের
+                                            প্রতিভাধর, নতুন ও পুরনো শিল্পীদের নিঃশ্বাস নিতে দিন। গান ও সিনেমার দিক দিয়ে
+                                            সৃষ্টিশীলতাকে আরও সুযোগ দিন।
+                                        </p>
+
+                                        <p>
+                                            আদনান সামির সঙ্গে সুর মিলিয়ে মুখ খুলেছেন গায়িকা আলিশা চিনাইয়া। আদনানের ওই পোস্ট শেয়ার
+                                            করে তিনি লেখেন, ‘এখানে কাজের কোনও নিয়মনীতি নেই। আর সৎভাবে কাজ তো হয়ই না!’
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4">
+                    <div class="external-content mb-4">
+                        <a href="#">
+                            <img src="image/external-link.gif" alt="" class="w-100">
+                        </a>
+                    </div>
+                    <div class="sidebar-heading">
+                        <a href="#">
+                            <h4>সর্বাধিক পঠিত</h4>
+                        </a>
+                        <div></div>
+                    </div>
+
+                    <div class="sidebar-news-single">
+                        <figure>
+                            <img src="image/news-image-4.jpg" alt="">
+                        </figure>
+                        <div>
+                            <ul class="news-meta">
+                                <li><a href="#" class="text-secondary">
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                        <span>২০ জুন, ২০২০</span>
+                                    </a></li>
+                            </ul>
+                            <a href="#" class="text-dark">
+                                <h4>নেপোটিজমের ধাক্কায় টুইটার থেকে বিদায় নিলেন সোনাক্ষী সিনহা</h4>
+                            </a>
+
+
+                        </div>
+                    </div>
+                    <div class="sidebar-news-single">
+                        <figure>
+                            <img src="image/news-image-5.jpg" alt="">
+                        </figure>
+                        <div>
+                            <ul class="news-meta">
+                                <li><a href="#" class="text-secondary">
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                        <span>২০ জুন, ২০২০</span>
+                                    </a></li>
+                            </ul>
+                            <a href="#" class="text-dark">
+                                <h4>ক্যানসার সচেতনতায় মাজনুন মিজানের তথ্যচিত্র</h4>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="sidebar-news-single">
+                        <figure>
+                            <img src="image/news-image-1.png" alt="">
+                        </figure>
+                        <div>
+                            <ul class="news-meta">
+                                <li><a href="#" class="text-secondary">
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                        <span>২০ জুন, ২০২০</span>
+                                    </a></li>
+                            </ul>
+                            <a href="#" class="text-dark">
+                                <h4>ক্যানসার সচেতনতায় মাজনুন মিজানের তথ্যচিত্র</h4>
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="sidebar-news-single">
+                        <figure>
+                            <img src="image/news-image-2.jpg" alt="">
+                        </figure>
+                        <div>
+                            <ul class="news-meta">
+                                <li><a href="#" class="text-secondary">
+                                        <span><i class="far fa-calendar-alt"></i></span>
+                                        <span>২০ জুন, ২০২০</span>
+                                    </a></li>
+                            </ul>
+                            <a href="#" class="text-dark">
+                                <h4>ক্যানসার সচেতনতায় মাজনুন মিজানের তথ্যচিত্র</h4>
+                            </a>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3 col-sm-6 d-none d-lg-block d-md-block">
+                        <h3>বাংলা মিডিয়াম</h3>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#"> প্রচ্ছদ </a></li>
+                            <li><a href="#"> মতামত </a></li>
+                            <li><a href="#"> অন্য আলো </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#">বাংলাদেশ</a></li>
+                            <li><a href="#">বিনোদন</a></li>
+                            <li><a href="#">পাঁচমিশালী</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <ul class="list-unstyled">
+                            <li><a href="#">ছবি</a></li>
+                            <li><a href="#">ভিডিও</a></li>
+                            <li><a href="#">আর্কাইভ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-tc">
+                    Bangla Medium is the promising newspaper in Bangladesh. The online portal of Bangla medium is
+                    growing fast among Bangladeshi and Bengali websites in the world. <a href="#">Terms and
+                        conditions</a>, <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <h3>সম্পাদক : জন ডো হপকিন্স</h3>
+
+
+
+                <p>ফোন: +৮৮০ ১ ২২২ ৩৩৩৩, +৮৮০ ২ ১১১ ১১১১ আই.পি. ফোন: +৮৮০ ১১১ ২২২ ৩৩৩৩ নিউজ রুম মোবাইল: +৮৮০ ১১১ ৯৯৯
+                    ৬৬৬৬, +৮৮০ ১১১ ২২২ ৩৩৩৩ ফ্যাক্স: +৮৮০ ২ ১১১ ২২২২</p>
+                <p>Email: news@banglamedium.com , banglamedium247@gmail.com , editor@banglamedium.com
+                    Marketing Department: 01323333333 E-mail: marketing@banglamedium.com</p>
+
+                <p class="footer-copyright">কপিরাইট © <span id="copyright-year"></span> | একটি এক্সাম্পল গ্রুপের
+                    প্রতিষ্ঠান</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/1.chunk.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
