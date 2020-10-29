@@ -164,4 +164,49 @@
   font-size: 1.1rem;
   font-weight: 500;
 }
+
+.search-box {
+  width: 100%;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #6f42c1;
+  border: 2px solid #6f42c1;
+  border-radius: 10px;
+  padding: 5px 50px 5px 30px;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  outline: none !important;
+}
+
+.search-box input:focus {
+  -webkit-box-shadow: 0px -1px 13px -10px black;
+  box-shadow: 0px -1px 13px -10px black;
+}
+
+.src-close-btn {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  font-size: 2rem;
+}
+
+.result-box {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.each-result {
+  border-bottom: 1.5px solid #6f42c1;
+}
+
+.result-number {
+  margin: 8px 15px;
+  font-weight: 500;
+}
 /*# sourceMappingURL=custom.css.map */
