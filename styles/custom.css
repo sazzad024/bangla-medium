@@ -114,4 +114,54 @@
 .active-video {
   text-decoration: underline !important;
 }
+
+.single-v-frame {
+  width: 100%;
+  padding-top: 56.6%;
+  position: relative;
+}
+
+.single-v-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.v-img-frame {
+  width: 100%;
+  padding-top: 56.6%;
+  position: relative;
+}
+
+.v-img-frame img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.v-info {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6f42c1;
+}
+
+.v-info span {
+  font-weight: 400;
+}
+
+.v-description {
+  font-weight: 400;
+}
+
+.v-sub-cat {
+  margin-bottom: 0px !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
 /*# sourceMappingURL=custom.css.map */
