@@ -7,73 +7,62 @@
     <title>Video Page - Bangla Medium</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"></i>
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/custom.css">
+    <link rel="stylesheet" href="styles/custom.min.css">
 </head>
 
 <body>
     <section class="top-bar bg-primary text-white">
         <div class="container">
-            <div class="row">
-                <div class="col-9 d-flex">
-                    <p class="m-0" id="top-bar-bn-date"> -- </p>
-                    <ul class="top-menu mobile-hidden">
-                        <li><a href="#">বিজ্ঞাপন দিন</a></li>
-                        <li><a href="#">যোগাযোগ করুন</a></li>
-                    </ul>
-                </div>
-                <div class="col-3 d-flex justify-content-end">
-                    <ul class="top-menu top-menu-social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-g"></i></a></a></li>
-                    </ul>
-                </div>
+            <div class="row pt-2">
+                
             </div>
         </div>
     </section>
     <section class="main-menu-section" id="main-menu-parent">
         <div class="container">
-            <nav class="nav-main" id="nav-main">
-                <div class="brand">
-                    <a href="#"><img src="image/placeholder-logo-2.png" alt=""></a>
-                </div>
-                <div class="main-menu" id="main-menu">
-                    <button class="mobile-menu-close" id="mobile-menu-close">
-                        <i class="far fa-times-circle"></i>
-                    </button>
-                    <ul>
-                        <li><a href="#">প্রচ্ছদ</a></li>
-                        <li><a href="#">নাটক</a></li>
-                        <li><a href="#">সিনেমা</a></li>
-                        <li><a href="#">সঙ্গীত</a></li>
-                        <li><a href="#">হলিউড</a></li>
-                        <li><a href="#">বলিউড</a></li>
-                        <li><a href="#">ভিডিও </a></li>
-                        <li><a href="#">ফটো গ্যালারী </a></li>
-                        <li class="has-submenu">
-                            <a href="#">আরো</a>
-                            <ul class="submenu" data-mobile="false">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="nav-main justify-content-between" id="nav-main">
+                        <div class="brand">
+                            <a href="#"><img src="image/placeholder-logo-2.png" alt=""></a>
+                        </div>
+                        <div class="main-menu" id="main-menu">
+                            <button class="mobile-menu-close" id="mobile-menu-close">
+                                <i class="far fa-times-circle"></i>
+                            </button>
+                            <ul>
+                                <li><a href="#">প্রচ্ছদ</a></li>
+                                <li><a href="#">নাটক</a></li>
                                 <li><a href="#">সিনেমা</a></li>
                                 <li><a href="#">সঙ্গীত</a></li>
                                 <li><a href="#">হলিউড</a></li>
                                 <li><a href="#">বলিউড</a></li>
+                                <li><a href="#">ভিডিও </a></li>
+                                <li><a href="#">ফটো গ্যালারী </a></li>
+                                <li class="has-submenu">
+                                    <a href="#">আরো</a>
+                                    <ul class="submenu" data-mobile="false">
+                                        <li><a href="#">সিনেমা</a></li>
+                                        <li><a href="#">সঙ্গীত</a></li>
+                                        <li><a href="#">হলিউড</a></li>
+                                        <li><a href="#">বলিউড</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                            <button id="mobile-menu-hamburger">
+                                <i class="fas fa-ellipsis-h"></i>
+                            </button>
+                    </nav>
                 </div>
-
-                <div class="main-menu-search">
-                    <button id="mobile-menu-hamburger">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <button id="menu-search-btn"><i class="fas fa-search"></i></button>
+                <div class="col-12 offset-md-6 col-md-6 offset-lg-8 col-lg-4 pt-1"> 
                     <div class="search-overlay" id="search-overlay" data-state="false">
                         <form action="">
                             <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="সার্চ করুন" aria-label="সার্চ করুন"
                                     aria-describedby="button-addon2">
                                 <div class="input-group-append">
-                                    <button class="btn btn-primary" type="submit" id="button-addon2">
+                                    <button class="btn btn-primary" type="submit" id="button-addon2" style="z-index: 0;">
                                         <i class="fas fa-search"></i>
                                     </button>
                                 </div>
@@ -81,9 +70,11 @@
                         </form>
                     </div>
                 </div>
-            </nav>
+            </div>
+            
         </div>
     </section>
+
     <section class="page-heading">
         <div class="container pt-3 pb-3">
             <h1><i class="fas fa-search"></i> সার্চ পেজ</h1>
@@ -211,6 +202,7 @@
                 <div class="row align-items-center">
                     <div class="col-md-3 col-sm-6 d-none d-lg-block d-md-block">
                         <h3>বাংলা মিডিয়াম</h3>
+                        
                     </div>
                     <div class="col-md-9 col-sm-12 d-flex flex-wrap">
                         <div class="col-sm-4"><a href="#"> প্রচ্ছদ </a></div>
@@ -249,6 +241,17 @@
                     <div class="col-12 col-sm-10 col-md-8 mt-3">
                         <p>Email: news@banglamedium.com , banglamedium247@gmail.com , editor@banglamedium.com
                         Marketing Department: 01323333333 E-mail: marketing@banglamedium.com</p>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col-auto mt-3">
+                        <ul class="top-menu top-menu-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></a></li>
+                            <li><a href="#"><i class="fab fa-google-plus-g"></i></a></a></li>
+                            <li><a href="#"><i class="fab fa-whatsapp"></i></a></a></li>
+                            <li><a href="#"><i class="fab fa-pinterest-p"></i></a></a></li>
+                            
+                        </ul>
                     </div>
                     <div class="w-100"></div>
                     <div class="col-12 col-sm-10 col-md-8 mt-3">
