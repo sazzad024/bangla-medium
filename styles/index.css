@@ -9597,6 +9597,33 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (max-width: 991px) {
+  .mobile-menu-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 2rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 3rem 0;
+  }
+  .mobile-menu-social a {
+    padding: 0.3rem !important;
+    width: 1.8rem !important;
+    height: 1.8rem;
+    margin: 0 0.3rem;
+    background: white;
+    color: #343a40 !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .has-submenu:hover a {
     background-color: initial;
   }
@@ -9633,18 +9660,21 @@ a.text-dark:hover, a.text-dark:focus {
     top: 0;
     background: #343a40;
     z-index: 2;
-    width: 280px;
-    right: -280px;
+    width: 100%;
+    right: -100%;
     height: 100%;
     padding-top: 3rem;
     overflow-y: scroll;
+  }
+  .nav-main .main-menu ul {
+    margin-top: 1.5rem;
   }
   .nav-main .main-menu .mobile-menu-close {
     background: none;
     border: none;
     outline: none;
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     position: absolute;
     left: 1.4rem;
     top: 0.5rem;
@@ -9652,6 +9682,7 @@ a.text-dark:hover, a.text-dark:focus {
   .nav-main .main-menu a {
     padding: 1rem 2rem;
     color: white;
+    font-size: 1.1rem;
   }
   .nav-main .main-menu.show {
     right: 0;
@@ -9659,6 +9690,9 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 @media (min-width: 992px) {
+  .mobile-menu-social {
+    display: none;
+  }
   #mobile-menu-hamburger {
     display: none;
   }
@@ -9714,6 +9748,18 @@ a.text-dark:hover, a.text-dark:focus {
 
 .bg-google {
   background-color: #ef4426 !important;
+}
+
+.bg-whatsapp {
+  background-color: #00e676 !important;
+}
+
+.bg-facebook-messenger {
+  background-color: #4266b2 !important;
+}
+
+.bg-instagram {
+  background-color: #974295 !important;
 }
 
 .breaking-news {
@@ -10080,6 +10126,19 @@ figure img {
   margin: 0;
 }
 
+.news-tags {
+  margin-bottom: 2rem;
+}
+
+.news-tags ul li a {
+  background: #6f42c1;
+  color: white;
+  margin-right: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3rem;
+  font-size: 0.9rem;
+}
+
 .tab-content {
   padding: 1rem 0;
 }
@@ -10192,6 +10251,9 @@ figure img {
 .sidebar-gallery img {
   width: 100%;
   margin-bottom: 0.6rem;
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .sidebar-gallery h4 {
@@ -10257,6 +10319,12 @@ figure img {
   width: 100%;
 }
 
+.single-news .featured-image .photo-credit {
+  background: #e9ecef;
+  padding: 0.2rem;
+  font-weight: 600;
+}
+
 .single-news .generic-content blockquote {
   background: #e9ecef;
   border-left: 2px solid #444;
@@ -10274,10 +10342,6 @@ figure img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -10292,7 +10356,7 @@ figure img {
 }
 
 .share-options ul li {
-  margin-bottom: 0.4rem;
+  margin-right: 0.4rem;
 }
 
 .share-options ul li a {
@@ -10310,6 +10374,10 @@ figure img {
           align-items: center;
   color: white;
   text-decoration: none;
+}
+
+.single-news-lazy-load {
+  margin-bottom: 5rem;
 }
 
 .image-gallery-view a {
@@ -10487,6 +10555,15 @@ figure img {
   .external-content {
     margin-bottom: 1rem;
   }
+  .nav-main {
+    padding: 0.4rem 0;
+  }
+  #mobile-menu-hamburger {
+    font-size: 2rem;
+  }
+  .nav-main .main-menu-search > button {
+    font-size: 1.7rem;
+  }
 }
 
 @media (max-width: 767px) {
@@ -10544,10 +10621,7 @@ figure img {
 
 @media (max-width: 400px) {
   html {
-    font-size: 12px;
-  }
-  .nav-main .main-menu-search > button {
-    font-size: 0.9rem;
+    font-size: 13px;
   }
   .featured-news-single-detail a h3 {
     background: rgba(0, 0, 0, 0.5);

@@ -1,0 +1,303 @@
+.p-l-r-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.author-pic {
+  border: 5px solid #6f42c1;
+  border-radius: 50%;
+  position: relative;
+  width: 150px;
+  padding: 150px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.author-pic img {
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5px;
+  left: -5px;
+}
+
+.top-author-pic {
+  border: 2px solid #6f42c1;
+  border-radius: 50%;
+  position: relative;
+  width: 80px;
+  padding: 80px 0px 0px 0px;
+  overflow: hidden;
+}
+
+.top-author-pic img {
+  position: absolute;
+  width: 106%;
+  height: 106%;
+  top: -3px;
+  left: -3px;
+}
+
+.author-name {
+  color: #6f42c1;
+}
+
+.top-author-name {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6f42c1;
+  margin: 0;
+}
+
+.top-writer-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #6f42c1;
+}
+
+.f-p85rem {
+  font-size: .85rem;
+}
+
+.author-cat a {
+  margin-right: 5px;
+}
+
+.max-w-80p {
+  max-width: 80%;
+}
+
+.author-tag {
+  max-width: 300px;
+}
+
+@media (max-width: 576px) {
+  .author-tag {
+    max-width: 150px;
+  }
+  .author-pic {
+    width: 100px;
+    padding-top: 100px;
+  }
+}
+
+.author-table td, .author-table th {
+  min-width: 125px;
+}
+
+.author-table th {
+  font-weight: 500;
+  color: #6f42c1;
+}
+
+.author-table tr:nth-child(even) {
+  background-color: #e9ecef;
+}
+
+.tag {
+  background: #6f42c1;
+  color: white;
+  margin-right: 0.3rem;
+  margin-bottom: 0.3rem;
+  padding: 0.2rem 0.5rem;
+  border-radius: 3rem;
+  font-size: 0.9rem;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.tag:hover {
+  text-decoration: underline;
+  color: #FFF;
+}
+
+.active-video {
+  text-decoration: underline !important;
+}
+
+.single-v-frame {
+  width: 100%;
+  padding-top: 56.6%;
+  position: relative;
+}
+
+.single-v-frame iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.v-img-frame {
+  width: 100%;
+  padding-top: 56.6%;
+  position: relative;
+}
+
+.v-img-frame img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.v-info {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6f42c1;
+}
+
+.v-info span {
+  font-weight: 400;
+}
+
+.v-description {
+  font-weight: 400;
+}
+
+.v-sub-cat {
+  margin-bottom: 0px !important;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.search-box {
+  width: 100%;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: #6f42c1;
+  border: 2px solid #6f42c1;
+  border-radius: 10px;
+  padding: 5px 50px 5px 30px;
+  -webkit-appearance: none !important;
+     -moz-appearance: none !important;
+          appearance: none !important;
+  outline: none !important;
+}
+
+.search-box input:focus {
+  -webkit-box-shadow: 0px -1px 13px -10px black;
+  box-shadow: 0px -1px 13px -10px black;
+}
+
+.src-close-btn {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  font-size: 2rem;
+}
+
+.result-box {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.each-result {
+  border-bottom: 1.5px solid #6f42c1;
+}
+
+.result-number {
+  margin: 8px 15px;
+  font-weight: 500;
+}
+
+.vote-box {
+  padding: 2px;
+  border: 1.5px solid #6f42c1;
+  border-radius: 6px;
+}
+
+.vote-box img {
+  width: 100%;
+  height: 150px;
+  border-radius: 6px;
+}
+
+.vote-box button {
+  margin: 0;
+  border: 0;
+  font-weight: 500;
+  padding: 1px 5px;
+  border-radius: 5px;
+  border: 1.5px solid #6f42c1;
+  cursor: pointer;
+}
+
+.vote-progress {
+  height: 14px;
+  border-radius: 10px;
+  border: 1.5px solid #6f42c1;
+  position: relative;
+  overflow: hidden;
+}
+
+.vote-progress-step {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: #6f42c1;
+}
+
+.vote-option-box input, .vote-option-box label, .vote-option-box p {
+  margin: 0;
+  padding: 0;
+}
+
+.vote-option-box input {
+  cursor: pointer;
+}
+
+.vote-option-box label {
+  font-weight: 500;
+}
+
+.vote-option-box p {
+  margin-left: auto;
+  font-weight: 500;
+  color: #6f42c1;
+  font-size: 1.1rem;
+}
+
+.social-share-box {
+  padding: 10px 15px 0px 15px;
+  width: 100%;
+  background-color: #e9ecef;
+  border-radius: 6px;
+}
+
+.share-options ul li:first-child {
+  background-color: transparent !important;
+  padding: 0;
+}
+
+.share-options ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.share-options ul li {
+  margin: 0.15rem;
+}
+
+#mobile-menu-hamburger {
+  border: 0;
+  outline: none !important;
+  font-size: 2rem;
+  color: #6f42c1;
+  background-color: transparent;
+}
+
+.badge {
+  padding-top: 0.4rem !important;
+}
+/*# sourceMappingURL=custom.css.map */
