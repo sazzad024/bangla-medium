@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video Page - Bangla Medium</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"></i>
+    
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -102,8 +103,16 @@
                         
                     </div>
                     <div class="col-12">
-                        <div class="single-v-frame">
-                            <iframe src="https://www.youtube-nocookie.com/embed/d3n8u3vwGZY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <div class="single-v-frame js-videoWrapper">
+                            
+                            <iframe class="js-videoIframe"  data-src="https://www.youtube.com/embed/d3n8u3vwGZY?autoplay=1&cc_lang_pref=1&modestbranding=1&rel=0&showinfo=0&controls=1" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            
+                            <div class="v-poster js-videoPoster">
+                                <img src="image/bangla-medium.png" alt="">
+                                <div>
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -129,7 +138,7 @@
                     </div>
                     <div class="col-12 col-md-6 mb-1">
                         <div class="v-img-frame">
-                            <img src="https://img.youtube.com/vi/sy6QU2IoM0k/sddefault.jpg" alt="" class="">
+                            <img src="image/bangla-medium.png" alt="" class="">
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -250,6 +259,27 @@
 
     <script src="js/1.chunk.js"></script>
     <script src="js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        //single video thumbnail settings
+        // poster frame click event
+        $(document).on('click','.js-videoPoster',function(ev) {
+            ev.preventDefault();
+            var $poster = $(this);
+            var $wrapper = $poster.closest('.js-videoWrapper');
+            videoPlay($wrapper,$poster);
+        });
+        
+        // play the targeted video (and hide the poster frame)
+        function videoPlay($wrapper,$poster) {
+            var $iframe = $wrapper.find('.js-videoIframe');
+            var src = $iframe.data('src');
+            // hide poster
+            $poster.addClass('poster-out');
+            // add iframe src in, starting the video
+            $iframe.attr('src',src);
+        }
+    </script>
 </body>
 
 </html>
