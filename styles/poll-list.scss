@@ -1,0 +1,70 @@
+$primary-color : #6f42c1;
+.vote-box{
+    padding: 2px;
+    border: 1.5px solid $primary-color;
+    border-radius: 6px;
+
+    img{
+        width: 100%;
+        height: 150px;
+        border-radius: 6px;
+    }
+    button{
+        
+        margin: 0;
+        border: 0;
+        font-weight: 500;
+        padding: 1px 5px;
+        border-radius: 5px;
+        border: 1.5px solid $primary-color;
+        cursor: pointer;
+    }
+}
+.vote-progress{
+    height: 14px; 
+    border-radius: 10px;
+    border: 1.5px solid $primary-color;
+    position: relative;
+    overflow: hidden;
+}
+.vote-progress-step{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: $primary-color;
+}
+.vote-option-box{
+    input, label, p{
+        margin: 0;
+        padding: 0;
+    }
+    input{
+        cursor: pointer;
+    }
+    label{
+        font-weight: 500; 
+    }
+    p{
+        margin-left: auto;
+        font-weight: 500;
+        color: $primary-color;
+        font-size: 1.1rem;
+    }
+}
+.social-share-box{
+    padding: 10px 15px 0px 15px; 
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 6px;
+}
+.share-options ul li:first-child{
+    background-color: transparent !important;
+    padding: 0;
+}
+.share-options ul{
+    flex-wrap: wrap;
+    li{
+        margin: 0.15rem;
+    }
+}  

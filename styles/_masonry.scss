@@ -1,0 +1,45 @@
+.grid {
+    //background: $primary-color;
+    width: 100%;
+    //border: 1px solid $bg-color;
+}  
+/* clearfix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 33.33%;
+   
+}
+.ms-width1{
+    width: 33.33%;
+}
+
+.ms-height1{
+    height: 200px;
+}
+ 
+/* 2 columns */
+@media all and (max-width: 992px){
+    .ms-width1{
+        width: 50%;
+    }
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    
+    }
+}
+@media all and (max-width: 576px){
+    .ms-width1{
+        width: 100%;
+    }
+    
+}  
+.pad-15{
+    padding: 15px;
+}
